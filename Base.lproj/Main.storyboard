@@ -62,7 +62,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="6xZ-CS-W8W">
-                                <rect key="frame" x="0.0" y="64" width="375" height="369"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="339"/>
                             </mapView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="yUP-SF-M7g">
                                 <rect key="frame" x="0.0" y="453" width="375" height="194"/>
@@ -73,7 +73,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="yYc-AI-9Nw">
                                                 <rect key="frame" x="0.0" y="0.0" width="71.5" height="50"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tiempo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YFZ-q4-Y2H" userLabel="CronoLab">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Tiempo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YFZ-q4-Y2H" userLabel="CronoLab">
                                                         <rect key="frame" x="0.0" y="0.0" width="71.5" height="20.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
@@ -165,6 +165,7 @@
                                         </subviews>
                                     </stackView>
                                 </subviews>
+                                <variation key="heightClass=compact-widthClass=compact" axis="horizontal"/>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -172,7 +173,7 @@
                             <constraint firstItem="6xZ-CS-W8W" firstAttribute="top" secondItem="R7q-e2-cvo" secondAttribute="top" id="0uf-fP-geS"/>
                             <constraint firstItem="yUP-SF-M7g" firstAttribute="leading" secondItem="LYf-iI-h2d" secondAttribute="leading" id="53l-wR-gJR"/>
                             <constraint firstItem="6xZ-CS-W8W" firstAttribute="trailing" secondItem="R7q-e2-cvo" secondAttribute="trailing" id="Jvw-E3-Kqg"/>
-                            <constraint firstItem="yUP-SF-M7g" firstAttribute="top" secondItem="6xZ-CS-W8W" secondAttribute="bottom" constant="20" id="TdZ-y2-WtZ"/>
+                            <constraint firstItem="yUP-SF-M7g" firstAttribute="top" secondItem="6xZ-CS-W8W" secondAttribute="bottom" constant="50" id="TdZ-y2-WtZ"/>
                             <constraint firstItem="R7q-e2-cvo" firstAttribute="trailing" secondItem="yUP-SF-M7g" secondAttribute="trailing" id="rG5-Wf-MWk"/>
                             <constraint firstItem="R7q-e2-cvo" firstAttribute="bottom" secondItem="yUP-SF-M7g" secondAttribute="bottom" constant="20" id="tS5-F2-069"/>
                             <constraint firstItem="6xZ-CS-W8W" firstAttribute="leading" secondItem="R7q-e2-cvo" secondAttribute="leading" id="uJE-uu-IeB"/>

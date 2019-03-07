@@ -103,7 +103,7 @@ class MapaViewController: UIViewController,CLLocationManagerDelegate,MKMapViewDe
             self.poly.append(self.userCoords)
             let linea=MKPolyline(coordinates: self.poly, count: self.poly.count)
             self.map.addOverlay(linea)
-            if poly.count>2
+            if poly.count>=2
             {
                 calcularDistancia(coor1: poly[poly.count-1], coor2: poly[poly.count-2])
             }
@@ -145,7 +145,7 @@ class MapaViewController: UIViewController,CLLocationManagerDelegate,MKMapViewDe
         //print(distanceinmet.rounded())
         self.distorignal=self.distorignal+distanceinmet/1000
         
-        self.distancia.text=String(rounded(toPlaces: 1,numero: self.distorignal))
+        self.distancia.text=String(rounded(toPlaces: 1,numero: self.distorignal))+" "+"Km"
         velocidaAct(distancia: distanceinmet.rounded())
         
         
@@ -199,7 +199,7 @@ class MapaViewController: UIViewController,CLLocationManagerDelegate,MKMapViewDe
     func velocidaAct(distancia:Double)
     {
         let velocidad = (distancia*3600)/1000
-        self.velocidadact.text=String(Int(velocidad.rounded()))
+        self.velocidadact.text=String(Int(velocidad.rounded()))+" "+"Km/h"
     }
     func velocidadMedia()
     {
@@ -210,7 +210,7 @@ class MapaViewController: UIViewController,CLLocationManagerDelegate,MKMapViewDe
         var velocidad=espacio/tiempo
         
         
-        self.velocidadM.text=String(Int(velocidad.rounded()))
+        self.velocidadM.text=String(Int(velocidad.rounded()))+" "+"Km/h"
         
         
     }
